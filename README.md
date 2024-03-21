@@ -1,7 +1,7 @@
 
 # JoKenPo Game Interface
 
-Welcome to the JoKenPo Game Interface repository. This React application, crafted with TypeScript and built with Vite, integrates with the Ethereum blockchain to provide a decentralized gaming experience. Our implementation utilizes cutting-edge web technologies like Three.js for 3D graphics, Viem for enhanced 3D visualization, and Wagmi hooks for a seamless Web3 integration.
+Welcome to the JoKenPo Game Interface repository. This React application, crafted with TypeScript and built with Vite, integrates with the Ethereum blockchain to provide a decentralized gaming experience. Our implementation utilizes cutting-edge web technologies like Three.js for 3D graphics, Viem and Wagmi hooks for a seamless Web3 integration.
 
 ## Project Structure
 
@@ -66,8 +66,8 @@ yarn preview
 
 - **React & TypeScript**: For a type-safe and maintainable codebase.
 - **Vite**: For fast development and build workflow.
-- **Three.js & Viem**: For immersive 3D web graphics.
-- **Wagmi**: To interact with Ethereum wallets and smart contracts.
+- **Three.js**: For immersive 3D web graphics.
+- **Wagmi & Viem**: To interact with Ethereum wallets and smart contracts.
 
 ## Web3 Integration
 
