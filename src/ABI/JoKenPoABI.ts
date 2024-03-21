@@ -1,0 +1,115 @@
+export default [
+  { inputs: [], stateMutability: 'nonpayable', type: 'constructor' },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: 'address',
+        name: 'player',
+        type: 'address',
+      },
+      {
+        indexed: false,
+        internalType: 'enum JKPLibrary.Choice',
+        name: 'choice',
+        type: 'uint8',
+      },
+      {
+        indexed: false,
+        internalType: 'string',
+        name: 'result',
+        type: 'string',
+      },
+    ],
+    name: 'Player',
+    type: 'event',
+  },
+  {
+    inputs: [],
+    name: 'getBid',
+    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'getCommission',
+    outputs: [{ internalType: 'uint8', name: '', type: 'uint8' }],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'getImplementationAddress',
+    outputs: [{ internalType: 'address', name: '', type: 'address' }],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'getResult',
+    outputs: [{ internalType: 'string', name: '', type: 'string' }],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'getWinners',
+    outputs: [
+      {
+        components: [
+          { internalType: 'address', name: 'playerAddress', type: 'address' },
+          { internalType: 'uint256', name: 'totalEarnings', type: 'uint256' },
+          { internalType: 'uint128', name: 'totalWins', type: 'uint128' },
+        ],
+        internalType: 'struct JKPLibrary.Player[]',
+        name: '',
+        type: 'tuple[]',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'owner',
+    outputs: [{ internalType: 'address', name: '', type: 'address' }],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'enum JKPLibrary.Choice',
+        name: '_choice',
+        type: 'uint8',
+      },
+    ],
+    name: 'play',
+    outputs: [],
+    stateMutability: 'payable',
+    type: 'function',
+  },
+  {
+    inputs: [{ internalType: 'uint256', name: '_newBid', type: 'uint256' }],
+    name: 'setBid',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [{ internalType: 'uint8', name: '_newCommission', type: 'uint8' }],
+    name: 'setCommission',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [{ internalType: 'address', name: 'jkpAddress', type: 'address' }],
+    name: 'upgradeImplementation',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+] as const;
