@@ -75,9 +75,6 @@ The project connects to the Ethereum blockchain using the Wagmi hooks, which abs
 
 [Smart Contract on Etherscan](https://sepolia.etherscan.io/address/0xe600C8C70057Bb294a01b1B7Fe054F274e1545D6#code)
 
-## Contributing
-
-Contributions are welcome! Please read the contribution guidelines in CONTRIBUTING.md before submitting a pull request.
 
 ## License
 
