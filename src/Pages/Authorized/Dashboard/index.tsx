@@ -76,8 +76,8 @@ const Dashboard: React.FC = () => {
                 <span>{Number(leader.totalWins)}</span>
               </DashboardCardTopLeadersRow>
             ))}
-            {topLeaders.length === 1 && (
-              <SeeMoreRanking to="/leaderboard">Ver mais</SeeMoreRanking>
+            {topLeaders.length === 5 && (
+              <SeeMoreRanking to="/leaderboard">See more</SeeMoreRanking>
             )}
           </DashboardCardTopLeaders>
         </Skeleton>
